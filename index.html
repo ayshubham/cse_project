@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cse project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <style>
+
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
         .text_input{
             outline: none;
             border: 1px solid grey;
@@ -42,6 +49,18 @@
             transition: 300ms;
             box-shadow: 2px 1px 10px   grey;
         }
+
+        .display{
+            color: rgb(34, 34, 34);
+            border: 1px solid rgb(102, 102, 102);
+            padding: 5px;
+            margin-top: 1px;
+            width: 200px;
+            background-color: white;
+            justify-content: center;
+            display: flex;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body style="margin: 0; padding: 0;">
@@ -49,15 +68,16 @@
 
 
 
-    <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #FF6464;">
+    <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #FF6464; overflow: scroll;">
 
 
 
 
 
 
-        <div style="width: 50%; height: 60%; border: 1px solid black; background-color: #FFE162; overflow: scroll;">
+        <div style="width: 50%; height: fit-content; border: 1px solid black; background-color: #FFE162; overflow: scroll;">
             <div style="margin: 10px;"> 
+                <div style="display: flex; justify-content: center; font-size: 2rem; letter-spacing: 2px;">Weather app</div>
                 <div style="display: flex; flex-direction: row; margin-left: 40px;" >
                     <input type="text" class="text_input" placeholder="city name">
                     <button class="btn">fetch data</button>
@@ -71,23 +91,23 @@
                     <button class="btn">fetch data</button>
                 </div>
             </div>
-            <div style="height: 55%; border: 1px solid blue;">
-                img
+            <div style="height: 55%;  overflow: hidden;">
+                <img src="/new.png" alt="" style="height: 350px; width: 100%; overflow: hidden;" >
             </div>
             <div style="display: flex; justify-content: space-evenly; overflow: hidden;">
 
-                <div>
-                    <div>temp</div> <div> 12 degree</div>
-                    <div>min temp</div> <div>12 degree</div>
-                    <div>max temp</div> <div>11p degree</div>
-                    <div>humidity</div> <div>bhot jyada</div>
+                <div style="margin-top: 10px ;">
+                    <div class="display">Weather</div> 
+                    <div class="display">Temp_Max</div> 
+                    <div class="display">Temp_Min</div> 
+                    <div class="display">Pressure</div> 
  
                 </div>
-                <div>
-                    <div>data</div>
-                    <div>data</div>
-                    <div>data</div>
-                    <div>data</div>
+                <div style="margin-top: 10px ;" >
+                    <div class="display">Speed</div>
+                    <div class="display">Humidity</div>
+                    <div class="display">Clouds</div>
+                    <div class="display">Wind</div>
 
                 </div>
                 
